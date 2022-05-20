@@ -27,9 +27,6 @@ const bodyHtml = `<html>
 
 const charset = "UTF-8"
 
-// Specify that you're using a shared credentials file.
-// AWS.config.credentials = new AWS.SharedIniFileCredentials({profile: 'isoshi-moustache'})
-
 // Specify the region.
 AWS.config.update({
   credentials: new AWS.Credentials(
