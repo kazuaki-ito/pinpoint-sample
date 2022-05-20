@@ -1,0 +1,26 @@
+{
+  "name": "pinpoint-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "isoshi-moustache",
+  "license": "UNLICENSE",
+  "private": false,
+  "scripts": {
+    "start": "yarn build && node build/main.js",
+    "start:create-email": "yarn build && node build/create-email.js",
+    "build": "tsc",
+    "test": "jest",
+    "build:watch": "tsc --watch"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1134.0",
+    "dotenv": "^16.0.1",
+    "typescript": "^4.6.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.1",
+    "jest": "^28.1.0",
+    "node": "^17.7.2",
+    "ts-jest": "^28.0.2"
+  }
+}
